@@ -15,7 +15,6 @@
 //   Fuel cost: 20 OMR
 
 // your code here
-
 const distance = 1000;
 const fuelPer100km = 8;
 const fuelPrice = 0.25;
