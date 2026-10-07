@@ -12,3 +12,11 @@
 //   *****
 
 // your code here
+const rows = 5;
+let line = "";
+
+for (let i = 1; i <= rows; i++)
+     {
+    line = line + "*";
+    console.log(line);
+    }
