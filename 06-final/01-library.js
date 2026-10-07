@@ -27,3 +27,28 @@ const books = [
 ];
 
 // your code here
+let available = 0;
+let before2000 = 0;
+let newest = books[0];
+
+for (let i = 0; i < books.length; i++) {
+
+    if (books[i].available === true) {
+        console.log(books[i].title, "by", books[i].author, `(${books[i].year}) — available`);
+        available++;
+    } else {
+        console.log(books[i].title, "by", books[i].author, `(${books[i].year}) — checked out`);
+    }
+
+    if (books[i].year < 2000) {
+        before2000++;
+    }
+
+    if (books[i].year > newest.year) {
+        newest = books[i];
+    }
+}
+
+console.log("Available books:", available);
+console.log("Published before 2000:", before2000);
+console.log("Newest book:", newest.title, `(${newest.year})`);
